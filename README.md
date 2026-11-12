@@ -2,8 +2,8 @@
 
 A modern, premium-looking and fully responsive travel agency website built as a frontend technical assessment. It offers four services: **Visa Services, Flight Booking, Hotel Booking and Car Rental**.
 
-**Live Demo:** https://your-project.vercel.app
-**Repository:** https://github.com/your-username/travel-agency
+**Live Demo:** https://travel-agency-bice-nu.vercel.app
+**Repository:** https://github.com/shayan-malik/travel-agency
 
 ---
 
@@ -94,4 +94,4 @@ public/
 ## Author
 
 **Your Name**
-GitHub: [@your-username](https://github.com/your-username)
+GitHub: [Shayan Malik](https://github.com/shayan-malik)
