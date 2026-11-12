@@ -39,18 +39,23 @@ export default function SearchTabs() {
 
   // Jab bhi results badlein, cards stagger ke saath aayein
   useGSAP(
-    () => {
-      if (!results.length) return;
-      gsap.from("[data-result]", {
-        y: 30,
-        opacity: 0,
+  () => {
+    if (!results.length) return;
+    gsap.fromTo(
+      "[data-result]",
+      { y: 30, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
         duration: 0.6,
         stagger: 0.1,
         ease: "power3.out",
-      });
-    },
-    { scope: ref, dependencies: [results] }
-  );
+        clearProps: "opacity,transform",
+      }
+    );
+  },
+  { scope: ref, dependencies: [results] }
+);
 
   // Tab badalne par form halka sa fade-in ho
   useGSAP(
