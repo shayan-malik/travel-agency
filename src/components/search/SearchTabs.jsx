@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import VisaForm from "@/components/search/VisaForm";
@@ -20,6 +20,8 @@ const tabs = [
 
 export default function SearchTabs() {
   const ref = useRef(null);
+  const messageRef = useRef(null);
+
   const [active, setActive] = useState("flights");
   const [results, setResults] = useState([]);
   const [selected, setSelected] = useState(null);
@@ -37,30 +39,45 @@ export default function SearchTabs() {
     setSelected(null);
   };
 
-  // Jab bhi results badlein, cards stagger ke saath aayein
-  useGSAP(
-  () => {
-    if (!results.length) return;
-    gsap.fromTo(
-      "[data-result]",
-      { y: 30, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.6,
-        stagger: 0.1,
-        ease: "power3.out",
-        clearProps: "opacity,transform",
-      }
-    );
-  },
-  { scope: ref, dependencies: [results] }
-);
+  // When an item is selected, make sure the confirmation is visible
+  useEffect(() => {
+    if (selected) {
+      messageRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+      });
+    }
+  }, [selected]);
 
-  // Tab badalne par form halka sa fade-in ho
+  // Animate result cards with a stagger whenever results change
   useGSAP(
     () => {
-      gsap.from("[data-form]", { opacity: 0, y: 12, duration: 0.4, ease: "power2.out" });
+      if (!results.length) return;
+      gsap.fromTo(
+        "[data-result]",
+        { y: 30, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.6,
+          stagger: 0.1,
+          ease: "power3.out",
+          clearProps: "opacity,transform",
+        }
+      );
+    },
+    { scope: ref, dependencies: [results] }
+  );
+
+  // Fade the form in when the tab changes
+  useGSAP(
+    () => {
+      gsap.from("[data-form]", {
+        opacity: 0,
+        y: 12,
+        duration: 0.4,
+        ease: "power2.out",
+      });
     },
     { scope: ref, dependencies: [active] }
   );
@@ -101,17 +118,28 @@ export default function SearchTabs() {
             results found
           </p>
 
-          <div className="flex flex-col gap-3">
-            {results.map((item) => (
-              <ResultCard key={item.id} item={item} onSelect={setSelected} />
-            ))}
-          </div>
-
+          {/* Confirmation message (above the cards so it stays in view) */}
           {selected && (
-            <p className="mt-4 rounded-xl border border-gold/30 bg-gold/10 px-4 py-3 text-sm text-gold">
-              ✓ Selected: {selected.title} (${selected.price}). Our team will contact you shortly.
+            <p
+              ref={messageRef}
+              role="status"
+              className="mb-4 rounded-xl border border-gold/30 bg-gold/10 px-4 py-3 text-sm text-gold"
+            >
+              ✓ Selected: {selected.title} (${selected.price}). Our team will
+              contact you shortly.
             </p>
           )}
+
+          <div className="flex flex-col gap-3">
+            {results.map((item) => (
+              <ResultCard
+                key={item.id}
+                item={item}
+                onSelect={setSelected}
+                isSelected={selected?.id === item.id}
+              />
+            ))}
+          </div>
         </div>
       )}
     </div>
