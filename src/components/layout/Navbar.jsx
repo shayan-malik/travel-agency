@@ -43,12 +43,12 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 inset-x-0 z-50 border-b py-4 transition-colors duration-300 ${
           open
-            ? "bg-ink py-3"
+            ? "border-transparent bg-ink"
             : scrolled
-            ? "bg-ink/90 backdrop-blur-md border-b border-white/10 py-3"
-            : "bg-transparent py-5"
+              ? "border-white/10 bg-ink/90 backdrop-blur-md"
+              : "border-transparent bg-transparent"
         }`}
       >
         <nav className="container-x flex items-center justify-between">
