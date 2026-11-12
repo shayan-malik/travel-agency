@@ -74,7 +74,7 @@ export default function Destinations() {
           eyebrow="Popular Destinations"
           title="Where will you go"
           highlight="next?"
-          description="Hamare sab se pasandida shehar, behtareen flight aur hotel packages ke saath."
+          description="Our most loved cities, with the best flight and hotel packages."
         />
 
         <div

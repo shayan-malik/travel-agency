@@ -4,7 +4,7 @@ export const services = [
     icon: "🛂",
     title: "Visa Services",
     description:
-      "Tourist, business aur transit visa ki poori guidance, documents se le kar approval tak.",
+      "Complete guidance for tourist, business and transit visas, from documents to approval.",
     features: ["Document checking", "Fast processing", "Application tracking"],
   },
   {
@@ -12,7 +12,7 @@ export const services = [
     icon: "✈️",
     title: "Flight Booking",
     description:
-      "Top airlines ke saath domestic aur international flights, best fares par.",
+      "Domestic and international flights with top airlines at the best fares.",
     features: ["Best price match", "Flexible dates", "24/7 support"],
   },
   {
@@ -20,7 +20,7 @@ export const services = [
     icon: "🏨",
     title: "Hotel Booking",
     description:
-      "Budget se le kar luxury tak, verified hotels aur resorts har destination par.",
+       "Verified hotels and resorts at every destination, from budget stays to luxury.",
     features: ["Verified properties", "Free cancellation", "Breakfast deals"],
   },
   {
@@ -28,7 +28,7 @@ export const services = [
     icon: "🚗",
     title: "Car Rental",
     description:
-      "Economy, SUV ya luxury, apni pasand ki gaari kiraye par, driver ke saath ya bina.",
+      "Economy, SUV or luxury, rent the car you like with or without a driver.",
     features: ["Airport pick-up", "Driver option", "Unlimited mileage"],
   },
 ];

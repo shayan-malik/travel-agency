@@ -76,7 +76,7 @@ export default function Testimonials() {
           eyebrow="Testimonials"
           title="Loved by"
           highlight="thousands of travelers"
-          description="Hamare customers kya kehte hain, unki apni zubani."
+          description="What our customers say, in their own words."
         />
 
         <div

@@ -43,7 +43,7 @@ export default function Contact() {
           eyebrow="Contact Us"
           title="Let's plan your"
           highlight="next trip"
-          description="Form bhar do, hamari team 24 ghante ke andar aap se rabta karegi."
+          description="Fill in the form and our team will get back to you within 24 hours."
         />
 
         <div className="mt-14 grid gap-8 lg:grid-cols-5">
@@ -115,7 +115,7 @@ export default function Contact() {
                 minLength={10}
                 value={form.message}
                 onChange={handleChange}
-                placeholder="Write your travel plan..."
+                placeholder="Tell us about your travel plan..."
                 className="w-full resize-none rounded-xl border border-white/10 bg-navy-light px-4 py-3 text-sm text-white placeholder:text-slate-500 outline-none transition-colors focus:border-gold focus:ring-2 focus:ring-gold/20"
               />
             </div>
@@ -131,7 +131,7 @@ export default function Contact() {
                 role="status"
                 className="rounded-xl border border-gold/30 bg-gold/10 px-4 py-3 text-sm text-gold sm:col-span-2"
               >
-                ✓ Thank you! We have received your message, we will be in touch soon.
+                ✓ Thank you! Your message has been received, we will get in touch soon.
               </p>
             )}
           </form>

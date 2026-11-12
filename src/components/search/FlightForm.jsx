@@ -15,7 +15,7 @@ export default function FlightForm({ onSearch }) {
     e.preventDefault();
 
     if (from === to) {
-      alert("Departure aur destination alag hone chahiye.");
+      alert("Departure and destination must be different.");
       return;
     }
 

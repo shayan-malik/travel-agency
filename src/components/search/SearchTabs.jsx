@@ -104,7 +104,7 @@ export default function SearchTabs() {
 
           {selected && (
             <p className="mt-4 rounded-xl border border-gold/30 bg-gold/10 px-4 py-3 text-sm text-gold">
-              ✓ Selected: {selected.title} (${selected.price}). Our team will contact you soon.
+              ✓ Selected: {selected.title} (${selected.price}). Our team will contact you shortly.
             </p>
           )}
         </div>

@@ -5,7 +5,7 @@ export const testimonials = [
     role: "Business Traveler",
     city: "Karachi",
     rating: 5,
-    text: "Visa ka poora process bilkul asaan raha. Documents ki guidance achi thi aur approval time se pehle aa gaya. Highly recommended!",
+    text: "The whole visa process was very easy. The document guidance was helpful and the approval came before time. Highly recommended!",
     initials: "AK",
   },
   {
@@ -14,7 +14,7 @@ export const testimonials = [
     role: "Family Trip",
     city: "Lahore",
     rating: 5,
-    text: "Dubai ka poora package book kiya: flights, hotel aur car. Sab kuch smooth tha aur price bhi doosri jagah se behtar mila.",
+    text: "Booked the complete Dubai package: flights, hotel and car. Everything was smooth and the price was better than elsewhere.",
     initials: "HA",
   },
   {
@@ -23,7 +23,7 @@ export const testimonials = [
     role: "Honeymoon",
     city: "Islamabad",
     rating: 5,
-    text: "Maldives ki booking ka experience zabardast raha. Team ne har chhoti cheez ka khayal rakha, 24/7 support bhi mila.",
+    text: "The Maldives booking experience was fantastic. The team took care of every little detail and 24/7 support was there too.",
     initials: "SA",
   },
   {
@@ -32,7 +32,7 @@ export const testimonials = [
     role: "Frequent Flyer",
     city: "Karachi",
     rating: 4,
-    text: "Flight booking fast aur hassle-free hai. Dates change karni padi to bina extra tension ke ho gayi.",
+    text: "Flight booking is fast and hassle-free. When I had to change my dates, it was done without any extra stress.",
     initials: "BR",
   },
   {
@@ -41,7 +41,7 @@ export const testimonials = [
     role: "Solo Traveler",
     city: "Lahore",
     rating: 5,
-    text: "Istanbul ke liye hotel aur car rental dono yahin se liye. Airport pick-up time par tha, bohat professional service.",
+    text: "Took both hotel and car rental for Istanbul from here. The airport pick-up was on time, very professional service.",
     initials: "FN",
   },
   {
@@ -50,7 +50,7 @@ export const testimonials = [
     role: "Tour Group Leader",
     city: "Islamabad",
     rating: 5,
-    text: "Bade group ke liye Thailand ka trip arrange kiya. Pricing transparent thi aur koi hidden charges nahi aaye.",
+    text: "Arranged a Thailand trip for a large group. Pricing was transparent and there were no hidden charges.",
     initials: "UT",
   },
 ];

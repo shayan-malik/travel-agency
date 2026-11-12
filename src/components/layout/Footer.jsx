@@ -28,7 +28,7 @@ export default function Footer() {
               Wander<span className="text-gold">lux</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
-              Visa, flights, hotels and car rentals, all in one place. Your trip, our responsibility.
+              Visa, flights, hotels and car rental, all in one place. Your journey, our responsibility.
             </p>
 
             <div className="mt-5 flex gap-3">
@@ -83,7 +83,7 @@ export default function Footer() {
           <div>
             <h4 className="mb-4 font-semibold text-white">Stay Updated</h4>
             <p className="mb-4 text-sm text-slate-400">
-              Get offers and deals in your inbox.
+              Get new offers and deals in your inbox.
             </p>
             <form
               className="flex gap-2"

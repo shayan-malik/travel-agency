@@ -66,7 +66,7 @@ export default function Services() {
           eyebrow="Our Services"
           title="Everything you need for your"
           highlight="perfect journey"
-          description="Visa se le kar car rental tak, ek hi jagah par sab kuch. Koi hidden charges nahi, koi tension nahi."
+          description="Everything from visas to car rentals in one place. No hidden charges, no stress."
         />
 
         <div

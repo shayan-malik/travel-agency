@@ -17,7 +17,7 @@ export default function CarForm({ onSearch }) {
     e.preventDefault();
 
     if (dropoff < pickup) {
-      alert("Drop-off date, pick-up se pehle nahi ho sakti.");
+      alert("Drop-off date cannot be before the pick-up date.");
       return;
     }
 

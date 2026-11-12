@@ -19,15 +19,19 @@ export default function Hero() {
         .from(
           "[data-hero-line]",
           { yPercent: 110, duration: 1, stagger: 0.15 },
-          "-=0.2"
+          "-=0.2",
         )
         .from("[data-hero-text]", { y: 30, opacity: 0, duration: 0.8 }, "-=0.5")
         .from(
           "[data-hero-cta]",
           { y: 30, opacity: 0, duration: 0.7, stagger: 0.12 },
-          "-=0.5"
+          "-=0.5",
         )
-        .from("[data-hero-search]", { y: 60, opacity: 0, duration: 0.9 }, "-=0.4");
+        .from(
+          "[data-hero-search]",
+          { y: 60, opacity: 0, duration: 0.9 },
+          "-=0.4",
+        );
 
       // background glow orbs ki halki floating animation
       gsap.to("[data-orb]", {
@@ -40,7 +44,7 @@ export default function Hero() {
         stagger: 1,
       });
     },
-    { scope: ref }
+    { scope: ref },
   );
 
   return (
@@ -85,8 +89,8 @@ export default function Hero() {
           data-hero-text
           className="mx-auto mt-6 max-w-2xl text-base sm:text-lg text-slate-400"
         >
-          Visa, flights, hotels aur car rental, sab kuch ek jagah. Apna agla
-          safar plan karo aasani aur befikri ke saath.
+          Plan your next journey with ease and peace of mind. Visa, flights,
+          hotels and car rental, all in one place.
         </p>
 
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -102,7 +106,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Search tabs yahan aayenge */}
         <div data-hero-search className="mt-14">
           <SearchTabs />
         </div>

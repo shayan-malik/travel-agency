@@ -17,7 +17,7 @@ export default function HotelForm({ onSearch }) {
     e.preventDefault();
 
     if (checkOut <= checkIn) {
-      alert("Check-out date, check-in ke baad honi chahiye.");
+      alert("Check-out date must be after the check-in date.");
       return;
     }
 
