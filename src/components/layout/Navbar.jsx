@@ -55,7 +55,14 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="#home"
-            onClick={() => setOpen(false)}
+            onClick={(e) => {
+              e.preventDefault();
+              setOpen(false);
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
             className="font-display text-2xl font-bold text-white"
           >
             Wander<span className="text-gold">lux</span>
