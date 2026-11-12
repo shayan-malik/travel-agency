@@ -54,7 +54,7 @@ export default function Navbar() {
         <nav className="container-x flex items-center justify-between">
           {/* Logo */}
           <Link
-            href="#home"
+            href="/"
             onClick={(e) => {
               e.preventDefault();
               setOpen(false);
