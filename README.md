@@ -5,7 +5,7 @@ A modern, premium-looking and fully responsive travel agency website built as a 
 **Live Demo:** https://travel-agency-bice-nu.vercel.app
 **Repository:** https://github.com/shayan-malik/travel-agency
 
----
+  ---
 
 ## Tech Stack
 
