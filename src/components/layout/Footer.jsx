@@ -25,7 +25,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="#home" className="font-display text-2xl font-bold text-white">
-              Wander<span className="text-gold">lux</span>
+              Safar<span className="text-gold">kos</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
               Visa, flights, hotels and car rental, all in one place. Your journey, our responsibility.
@@ -108,7 +108,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-14 flex flex-col items-center justify-between gap-3 border-t border-white/10 py-6 text-xs text-slate-500 sm:flex-row">
-          <p>© {new Date().getFullYear()} Wanderlux Travel. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Safarkos Travel. All rights reserved.</p>
           <p>Built with Next.js, Tailwind CSS & GSAP</p>
         </div>
       </div>

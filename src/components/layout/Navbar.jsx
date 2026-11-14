@@ -58,7 +58,7 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
             className="font-display text-2xl font-bold text-white"
           >
-            Wander<span className="text-gold">lux</span>
+            Safar<span className="text-gold">kos</span>
           </Link>
 
           {/* Desktop links */}

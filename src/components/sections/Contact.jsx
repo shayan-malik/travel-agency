@@ -9,7 +9,7 @@ import useReveal from "@/hooks/useReveal";
 const info = [
   { icon: "📍", label: "Office", value: "Shahrah-e-Faisal, Karachi, Pakistan" },
   { icon: "📞", label: "Phone", value: "+92 300 1234567" },
-  { icon: "✉️", label: "Email", value: "info@wanderlux.com" },
+  { icon: "✉️", label: "Email", value: "info@safarkos.com" },
   { icon: "🕒", label: "Working Hours", value: "Mon - Sat, 9:00 AM - 8:00 PM" },
 ];
 
